@@ -1,0 +1,125 @@
+---
+title: Getting Started with Midhun Gk
+description: Set up your account and create your first documentation space in minutes to begin organizing your projects.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following:
+
+<Callout kind="info">
+
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Optional: A GitHub account for version control integration
+
+</Callout>
+
+## Create Your Account
+
+Sign up for Midhun Gk to access your documentation workspace.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="monitor">
+    Navigate to `https://dashboard.example.com` and click **Sign Up**.
+  </Step>
+  <Step title="Enter Your Details" icon="user">
+    Provide your email, create a strong password, and complete the CAPTCHA.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification link and click it to activate your account.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the dashboard, enter your credentials, and access your workspace.
+  </Step>
+</Steps>
+
+## Create Your First Documentation Space
+
+Organize your projects by creating a dedicated space.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+    Click **New Space** in the sidebar and enter a name like `My Project Docs`.
+  </Step>
+  <Step title="Set Permissions" icon="shield">
+    Choose public, private, or team access based on your needs.
+  </Step>
+  <Step title="Add Description" icon="file-text">
+    Write a brief overview, such as `Documentation for my latest app.`
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+
+Name your spaces descriptively to easily find them later. Use keywords like project name or version.
+
+</Callout>
+
+## Customize and Add Your First Page
+
+Tailor your space with custom settings and create an initial page using MDX.
+
+First, configure basic options:
+
+<Tabs>
+  <Tab title="Theme" icon="palette">
+    Select your brand color `#3B82F6` in **Space Settings > Appearance**.
+  </Tab>
+  <Tab title="Navigation" icon="menu">
+    Enable sidebar menu and add a logo under **Space Settings > Layout**.
+  </Tab>
+</Tabs>
+
+Now, add your first page with a simple MDX example:
+
+<CodeGroup tabs="MDX,Bash">
+  ```mdx
+  ---
+  title: Welcome
+  description: Your first page.
+  ---
+
+  ## Hello World
+
+  Welcome to Midhun Gk!
+  ```
+  ```bash
+  # If using CLI (optional)
+  mgk space create my-space --page welcome.mdx
+  ```
+</CodeGroup>
+
+Save and publish to see your page live.
+
+## Basic Navigation Tour
+
+Explore key areas of your new space:
+
+<Columns cols={3}>
+  <Card title="Sidebar" icon="menu" href="#sidebar">
+    Access pages, settings, and search.
+  </Card>
+  <Card title="Editor" icon="edit-3" href="#editor">
+    Write MDX with live preview.
+  </Card>
+  <Card title="Publish" icon="globe" href="#publish">
+    Deploy changes instantly.
+  </Card>
+</Columns>
+
+## Next Steps
+
+<Expandable title="Advanced Features" default-open="false">
+
+Integrate with GitHub for version control or set up webhooks at `https://api.example.com/webhooks`.
+
+</Expandable>
+
+Continue with [Authentication](/authentication) for secure access or explore the [Introduction](/introduction).
+
+<Callout kind="success">
+
+Congratulations! You now have a fully functional documentation space. Start adding content to organize your projects effectively.
+
+</Callout>

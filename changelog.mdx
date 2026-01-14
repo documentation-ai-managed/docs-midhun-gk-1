@@ -1,0 +1,135 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Midhun Gk with version history.
+---
+
+## Recent Updates
+
+Stay informed about the latest enhancements, bug fixes, and improvements to Midhun Gk. Review the release notes below to understand new capabilities and required actions.
+
+<Update label="2024-10-20" description="v1.3.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for documentation editing, enabling multiple users to work simultaneously.
+- Introduced advanced search with filters for tags, authors, and dates.
+
+## Improvements
+
+- Enhanced performance of page rendering by `>30%` for large documentation sites.
+- Updated UI components with the brand color `#3B82F6` for better visual consistency.
+
+## Bug Fixes
+
+- Fixed issue where embedded code blocks failed to highlight syntax correctly.
+- Resolved export errors when including images in PDF generation.
+
+</Update>
+
+<Update label="2024-10-05" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated webhook support for automatic deployments on content updates.
+- Added version history viewer to track changes per page.
+
+## Bug Fixes
+
+- Corrected authentication token refresh logic to prevent session timeouts.
+- Patched cross-site scripting vulnerability in user-generated content.
+
+</Update>
+
+<Update label="2024-09-15" description="v1.1.0" tags={["breaking", "feature"]}>
+
+## Breaking Changes
+
+- Removed legacy Markdown parser; migrate to the new engine for full compatibility.
+
+## New Features
+
+- Launched customizable themes with brand color support.
+- Enabled API access for programmatic documentation management.
+
+## Improvements
+
+- Optimized database queries for `>50%` faster page loads.
+
+</Update>
+
+## Upgrade to the Latest Version
+
+Follow these steps to update your Midhun Gk instance and benefit from the newest features.
+
+<Steps>
+  <Step title="Backup Your Data" icon="database">
+
+    Create a full backup of your documentation space.
+
+    ```bash
+    midhun-gk backup --path ./backups/latest
+    ```
+
+  </Step>
+  <Step title="Update Package" icon="download">
+
+    ```bash
+    npm update midhun-gk@latest
+    ```
+
+    Or use Yarn:
+
+    ````bash
+    yarn upgrade midhun-gk@latest
+    ````
+
+  </Step>
+  <Step title="Run Migrations" icon="settings">
+
+    Apply database migrations if applicable.
+
+    ```bash
+    midhun-gk migrate
+    ```
+
+  </Step>
+  <Step title="Restart Service" icon="refresh-cw">
+
+    Restart your Midhun Gk server.
+
+    ```bash
+    systemctl restart midhun-gk
+    ```
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Check the [GitHub repository](https://github.com/midhungk/midhun-gk) for detailed migration guides and community discussions.
+</Callout>
+
+## Quick Links
+
+<Columns cols={3}>
+  <Card title="Introduction" icon="book-open" href="/introduction">
+    Get started with Midhun Gk fundamentals.
+  </Card>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Set up your documentation space in minutes.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your project with API keys and tokens.
+  </Card>
+</Columns>
+
+## Upcoming Changes
+
+<Expandable title="Sneak Peek at v1.4.0" default-open="false">
+
+Prepare for AI-powered content suggestions and automated tagging. These features will enhance your workflow by analyzing documentation patterns.
+
+<Callout kind="info">
+  Provide feedback on upcoming features via GitHub issues.
+</Callout>
+
+</Expandable>
